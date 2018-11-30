@@ -1,6 +1,6 @@
-# Article Knowledgebase Application
+# Project Organizer Tool
 
-This is a knowledgebase app used in the "Node.js & Express From Scratch" Youtube series.
+This is a project organizer tool used in the "Node.js.
 
 ## Technologies
 * Node.js
@@ -10,11 +10,6 @@ This is a knowledgebase app used in the "Node.js & Express From Scratch" Youtube
 * Pug Templating
 * Passport.js Authentication
 * BCrypt Hashing
-
-### Version
-2.0.0
-
-## Usage
 
 
 ### Installation
