@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method='POST', action='/teams/add')
+        #form-group
+            label Project Name:
+            input.form-control(name='title', type='text')
+        #form-group
+            label Team Member 1:
+            input.form-control(name='member1', type='text')
+        #form-group
+            label Team Member2:
+            input.form-control(name='member2', type='text')
+        #form-group
+            label Mention Work Done And Plan Also:
+            textarea.form-control(name='body')
+        br
+        input.btn.btn-primary(type='submit',value='Submit')

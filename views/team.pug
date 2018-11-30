@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1= team.title
+    h2 Project Members
+    h3= team.member1
+    h3= team.member2
+    h2 Finished Work And Plan
+    h4= team.body
+    hr
+    if user
+        if user.id ==team.author
+            a.btn.btn-default(href='/teams/edit/'+team._id) Edit
+            a.btn.btn-danger.delete-team(href='#',data-id=team._id) Delete
+

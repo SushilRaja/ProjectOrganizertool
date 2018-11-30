@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method='POST', action='/teams/edit/'+team._id)
+        #form-group
+            label Title:
+            input.form-control(name='title', type='text', value=team.title)
+        #form-group
+            label Title:
+            input.form-control(name='member1', type='text', value=team.member1)
+        #form-group
+            label Title:
+            input.form-control(name='member2', type='text', value=team.member2)
+
+        #form-group
+            label Mention Finished Work And Plan:
+            textarea.form-control(name='body')= team.body
+        br
+        input.btn.btn-primary(type='submit',value='Submit')
