@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 # Project Organizer Tool
 
 This is a project organizer tool used in the "Node.js.
+=======
+# Project ORganizer tool
+
+This is a project organizer tool used in the "Node.js & Express From Scratch" Youtube series.
+>>>>>>> Stashed changes
 
 ## Technologies
 * Node.js

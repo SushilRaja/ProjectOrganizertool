@@ -50,7 +50,7 @@ router.post('/add', function(req, res){
 // Load Edit Form
 router.get('/edit/:id', ensureAuthenticated, function(req, res){
     Team.findById(req.params.id, function(err, team){
-        if(team.author != req.user._id){
+        if(team.author != req.user._id || team.author != req.isAdmin){
             req.flash('danger', 'Not Authorized');
             res.redirect('/');
         }

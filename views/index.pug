@@ -1,6 +1,10 @@
 extends layout
-
 block content
+  if isAdmin
+    if currentUser && currentUser.isAdmin
+      h3 You are Admin
+
+  //h2 #{}
   h1 #{title}
   ul.list-group
     each team, i in teams
